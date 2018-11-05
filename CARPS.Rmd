@@ -13,8 +13,8 @@ articleID <- "EXT_5-11-2015" # insert the article ID code here e.g., "10-3-2015_
 reportType <- "pilot" # specify whether this is the 'pilot' report or 'fisal' report
 pilotNames <- "Andrew Nam" # insert the pilot's name here e.g., "Tom Hardwicke".  If there are multiple cpilots enter both names in a character string e.g., "Tom Hardwicke, Bob Dylan"
 copilotNames <- "Lauren Borchers" # # insert the co-pilot's name here e.g., "Michael Frank". If there are multiple co-pilots enter both names in a character string e.g., "Tom Hardwicke, Bob Dylan"
-pilotTTC <- 240 # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
-copilotTTC <- 45 # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+pilotTTC <- "240" # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+copilotTTC <- "240" # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
 pilotStartDate <- "11/01/18" # insert the pilot's start date in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
 copilotStartDate <- "11/02/18" # insert the co-pilot's start date in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
 completionDate <- "11/04/19" # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date("01/25/18", format = "%m/%d/%y")
@@ -30,13 +30,9 @@ The original authors conducted the study with 269 individuals on Amazon Mechanic
 
 #### Target outcomes: 
 
-[PILOT copy and paste the target outcomes identified in targetOutcomes.md]  
-
 > Impurity and moral self-regard. Similar 2 × 2 ANOVAs using impurity and moral self-regard as dependent measures also revealed only a significant main effect of type of behavior. Participants in the inauthentic-behavior condition reported greater feelings of impurity (M = 3.56, SD = 1.86, 95% CI = [3.30, 3.85]) and lower moral self-regard (M = 2.90, SD = 1.50, 95% CI = [2.61, 3.16]) than did participants in the authentic-behavior condition (impurity: M = 1.51, SD = 1.29, 95% CI = [1.25, 1.78]; moral self-regard: M = 4.99, SD = 1.68, 95% CI = [4.72, 5.26]), F(1, 263) = 111.06, p < .001, ηp 2 = .30, and F(1, 263) = 115.25, p < .001, ηp2 = .31, respectively.
 
 ------
-
-[PILOT/COPILOT DO NOT CHANGE THE CODE IN THE CHUNK BELOW]  
 
 ```{r global_options, include=FALSE}
 # sets up some formatting options for the R Markdown document
@@ -44,8 +40,6 @@ knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
 ```
 
 # Step 1: Load packages and prepare report object
-
-[PILOT/COPILOT Some useful packages are being loaded below. You can add any additional ones you might need too.]
 
 ```{r}
 # load packages
@@ -56,8 +50,6 @@ library(readxl) # import excel files
 library(CARPSreports) # custom report functions
 library(sjstats)
 ```
-
-[PILOT/COPILOT DO NOT MAKE CHANGES TO THE CODE CHUNK BELOW]
 
 ```{r}
 # Prepare report object. This will be updated automatically by the reproCheck function each time values are compared
@@ -80,8 +72,6 @@ data <- data %>%
 # Step 4: Run analysis
 
 ## Pre-processing
-
-[you can remove this section if no pre-processing is required]
 
 ```{r}
 data <- data %>%
@@ -181,8 +171,7 @@ quiet <- reproCheck(reportedValue = '.31', obtainedValue = eta, valueType = 'oth
 # Step 5: Conclusion
 
 The reproducibility of the above study was successful for all means and standard deviations but failed to reproduce the exact confidence intervals with half of the intervals being constructed with < 1% difference and a maximum difference of 9.6%. The exact inferential statistics also failed to reproduce with the F-stat having a difference of less than 1% and the p-value having a difference of 3.23%.
-  
-[PILOT/COPILOT ENTER RELEVANT INFORMATION BELOW]
+
 
 ```{r}
 Author_Assistance = FALSE # was author assistance provided? (if so, enter TRUE)
@@ -206,8 +195,6 @@ locus_unidentified_resolved <- 0 # how many discrete issues were there for which
 
 Affects_Conclusion <- FALSE # Do any reproducibility issues encounter appear to affect the conclusions made in the original article? TRUE, FALSE, or NA. This is a subjective judgement, but you should taking into account multiple factors, such as the presence/absence of decision errors, the number of target outcomes that could not be reproduced, the type of outcomes that could or could not be reproduced, the difference in magnitude of effect sizes, and the predictions of the specific hypothesis under scrutiny.
 ```
-
-[PILOT/COPILOT DOD NOT EDIT THE CODE CHUNK BELOW]
 
 ```{r}
 reportObject <- reportObject %>%
@@ -245,8 +232,6 @@ if(reportType == "final"){
 ```
 
 # Session information
-
-[This function will output information about the package versions used in this report:]
 
 ```{r session_info, include=TRUE, echo=TRUE, results='markup'}
 devtools::session_info()

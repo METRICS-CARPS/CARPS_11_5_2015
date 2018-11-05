@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/436541/c38f91a480324196897ffea3cb596293
+bundleId: https://api.rpubs.com/api/v1/document/436541/c38f91a480324196897ffea3cb596293
+url: http://rpubs.com/andrewnam/436541
+when: 1541388353.84473

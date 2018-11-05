@@ -223,19 +223,17 @@ div.tocify {
 </div>
 
 
-<p>[PILOT/COPILOT - TEXT IN SQUARE BRACKETS IS HERE FOR GUIDANCE. COPILOT PLEASE DELETE BEFORE KNITTING THE FINAL REPORT]</p>
 <div id="report-details" class="section level1">
 <h1>Report Details</h1>
-<p>[PILOT/COPILOT ENTER RELEVANT REPORT DETAILS HERE]</p>
 <pre class="r"><code>articleID &lt;- &quot;EXT_5-11-2015&quot; # insert the article ID code here e.g., &quot;10-3-2015_PS&quot;
-reportType &lt;- &quot;pilot&quot; # specify whether this is the 'pilot' report or 'final' report
+reportType &lt;- &quot;pilot&quot; # specify whether this is the 'pilot' report or 'fisal' report
 pilotNames &lt;- &quot;Andrew Nam&quot; # insert the pilot's name here e.g., &quot;Tom Hardwicke&quot;.  If there are multiple cpilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
 copilotNames &lt;- &quot;Lauren Borchers&quot; # # insert the co-pilot's name here e.g., &quot;Michael Frank&quot;. If there are multiple co-pilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
-pilotTTC &lt;- NA # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
-copilotTTC &lt;- NA # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+pilotTTC &lt;- &quot;240&quot; # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+copilotTTC &lt;- &quot;240&quot; # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
 pilotStartDate &lt;- &quot;11/01/18&quot; # insert the pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
-copilotStartDate &lt;- NA # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
-completionDate &lt;- NA # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
+copilotStartDate &lt;- &quot;11/02/18&quot; # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
+completionDate &lt;- &quot;11/04/19&quot; # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
 <hr />
 <div id="methods-summary" class="section level4">
 <h4>Methods summary:</h4>
@@ -244,17 +242,14 @@ completionDate &lt;- NA # copilot insert the date of final report completion (af
 </div>
 <div id="target-outcomes" class="section level4">
 <h4>Target outcomes:</h4>
-<p>[PILOT copy and paste the target outcomes identified in targetOutcomes.md]</p>
 <blockquote>
 <p>Impurity and moral self-regard. Similar 2 × 2 ANOVAs using impurity and moral self-regard as dependent measures also revealed only a significant main effect of type of behavior. Participants in the inauthentic-behavior condition reported greater feelings of impurity (M = 3.56, SD = 1.86, 95% CI = [3.30, 3.85]) and lower moral self-regard (M = 2.90, SD = 1.50, 95% CI = [2.61, 3.16]) than did participants in the authentic-behavior condition (impurity: M = 1.51, SD = 1.29, 95% CI = [1.25, 1.78]; moral self-regard: M = 4.99, SD = 1.68, 95% CI = [4.72, 5.26]), F(1, 263) = 111.06, p &lt; .001, ηp 2 = .30, and F(1, 263) = 115.25, p &lt; .001, ηp2 = .31, respectively.</p>
 </blockquote>
 <hr />
-<p>[PILOT/COPILOT DO NOT CHANGE THE CODE IN THE CHUNK BELOW]</p>
 </div>
 </div>
 <div id="step-1-load-packages-and-prepare-report-object" class="section level1">
 <h1>Step 1: Load packages and prepare report object</h1>
-<p>[PILOT/COPILOT Some useful packages are being loaded below. You can add any additional ones you might need too.]</p>
 <pre class="r"><code># load packages
 library(tidyverse) # for data munging
 library(knitr) # for kable table formating
@@ -262,7 +257,6 @@ library(haven) # import and export 'SPSS', 'Stata' and 'SAS' Files
 library(readxl) # import excel files
 library(CARPSreports) # custom report functions
 library(sjstats)</code></pre>
-<p>[PILOT/COPILOT DO NOT MAKE CHANGES TO THE CODE CHUNK BELOW]</p>
 <pre class="r"><code># Prepare report object. This will be updated automatically by the reproCheck function each time values are compared
 reportObject &lt;- data.frame(dummyRow = TRUE, reportedValue = NA, obtainedValue = NA, valueType = NA, percentageError = NA, comparisonOutcome = NA, eyeballCheck = NA)</code></pre>
 </div>
@@ -279,7 +273,6 @@ reportObject &lt;- data.frame(dummyRow = TRUE, reportedValue = NA, obtainedValue
 <h1>Step 4: Run analysis</h1>
 <div id="pre-processing" class="section level2">
 <h2>Pre-processing</h2>
-<p>[you can remove this section if no pre-processing is required]</p>
 <pre class="r"><code>data &lt;- data %&gt;%
   filter(failed_essay == 0) %&gt;%
   select(subid, authenticity, general_type, moral_self_regard, impurity)</code></pre>
@@ -388,7 +381,6 @@ quiet &lt;- reproCheck(reportedValue = '.31', obtainedValue = eta, valueType = '
 <div id="step-5-conclusion" class="section level1">
 <h1>Step 5: Conclusion</h1>
 <p>The reproducibility of the above study was successful for all means and standard deviations but failed to reproduce the exact confidence intervals with half of the intervals being constructed with &lt; 1% difference and a maximum difference of 9.6%. The exact inferential statistics also failed to reproduce with the F-stat having a difference of less than 1% and the p-value having a difference of 3.23%.</p>
-<p>[PILOT/COPILOT ENTER RELEVANT INFORMATION BELOW]</p>
 <pre class="r"><code>Author_Assistance = FALSE # was author assistance provided? (if so, enter TRUE)
 
 Insufficient_Information_Errors &lt;- 0 # how many discrete insufficient information issues did you encounter?
@@ -409,7 +401,6 @@ locus_data_resolved &lt;- 0 # how many discrete issues did you encounter that re
 locus_unidentified_resolved &lt;- 0 # how many discrete issues were there for which you could not identify the cause
 
 Affects_Conclusion &lt;- FALSE # Do any reproducibility issues encounter appear to affect the conclusions made in the original article? TRUE, FALSE, or NA. This is a subjective judgement, but you should taking into account multiple factors, such as the presence/absence of decision errors, the number of target outcomes that could not be reproduced, the type of outcomes that could or could not be reproduced, the difference in magnitude of effect sizes, and the predictions of the specific hypothesis under scrutiny.</code></pre>
-<p>[PILOT/COPILOT DOD NOT EDIT THE CODE CHUNK BELOW]</p>
 <pre class="r"><code>reportObject &lt;- reportObject %&gt;%
   filter(dummyRow == FALSE) %&gt;% # remove the dummy row
   select(-dummyRow) %&gt;% # remove dummy row designation
@@ -445,7 +436,6 @@ if(reportType == &quot;final&quot;){
 </div>
 <div id="session-information" class="section level1">
 <h1>Session information</h1>
-<p>[This function will output information about the package versions used in this report:]</p>
 <pre class="r"><code>devtools::session_info()</code></pre>
 <pre><code>## ─ Session info ──────────────────────────────────────────────────────────
 ##  setting  value                       

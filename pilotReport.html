@@ -225,6 +225,7 @@ div.tocify {
 
 <div id="report-details" class="section level1">
 <h1>Report Details</h1>
+<<<<<<< HEAD:CARPS.html
 <pre class="r"><code>articleID &lt;- &quot;EXT_5-11-2015&quot; # insert the article ID code here e.g., &quot;10-3-2015_PS&quot;
 reportType &lt;- &quot;pilot&quot; # specify whether this is the 'pilot' report or 'fisal' report
 pilotNames &lt;- &quot;Andrew Nam&quot; # insert the pilot's name here e.g., &quot;Tom Hardwicke&quot;.  If there are multiple cpilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
@@ -234,16 +235,31 @@ copilotTTC &lt;- &quot;240&quot; # insert the co-pilot's estimated time to compl
 pilotStartDate &lt;- &quot;11/01/18&quot; # insert the pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
 copilotStartDate &lt;- &quot;11/02/18&quot; # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
 completionDate &lt;- &quot;11/04/19&quot; # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
+=======
+<pre class="r"><code>articleID &lt;- &quot;EXT_11-5-2015&quot; # insert the article ID code here
+reportType &lt;- &quot;pilot&quot; # specify whether this is the 'pilot' report or 'final' report
+pilotNames &lt;- &quot;George Kachergis&quot; # insert the pilot's name here e.g., &quot;Tom Hardwicke&quot;.  If there are multiple cpilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
+copilotNames &lt;- NA # # insert the co-pilot's name here e.g., &quot;Michael Frank&quot;. If there are multiple co-pilots enter both names in a character string e.g., &quot;Tom Hardwicke, Bob Dylan&quot;
+pilotTTC &lt;- NA # insert the pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+copilotTTC &lt;- NA # insert the co-pilot's estimated time to complete (in minutes, fine to approximate) e.g., 120
+pilotStartDate &lt;- as.Date(&quot;10/19/18&quot;, format = &quot;%m/%d/%y&quot;) # insert the pilot's start date in US format 
+copilotStartDate &lt;- NA # insert the co-pilot's start date in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)
+completionDate &lt;- NA # copilot insert the date of final report completion (after any necessary rounds of author assistance) in US format e.g., as.Date(&quot;01/25/18&quot;, format = &quot;%m/%d/%y&quot;)</code></pre>
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 <hr />
 <div id="methods-summary" class="section level4">
 <h4>Methods summary:</h4>
-<p>The original authors conducted the study with 269 individuals on Amazon Mechanical Turk, two of which were excluded for not writing the tasked essay. The participants were further filtered using an initial attention check, then asked to write for 5 to 10 minutes about an event based on their condition. Participants were divided into 4 groups across 2 conditions: authentic vs. inauthentic (type of behavior) and general vs. unrelated to lying (type of event). Next, participants were asked to complete 7-point Likert scale measures: 10 questions about moral self-regard, 3 about feelings of impurity, and 4 about feelings of alienation. They were also asked to recall the original writing prompt and provide demographic information.</p>
+<p>Experiment 1 included 269 participants who were asked to recall and write about their behavior in an event in their life. As a manipulation Participants were randomly assigned to a condition in the 2 (behavior type: authentic vs. inauthentic) × 2 (event type: general vs. unrelated to lying) between-subjects design. After writing the essay, their feelings of moral self-regard (10 items) and impurity (3 items) were self-reported on a scale of 1 to 7. Two participants were excluded for not writing an essay.</p>
 <hr />
 </div>
 <div id="target-outcomes" class="section level4">
 <h4>Target outcomes:</h4>
+<<<<<<< HEAD:CARPS.html
+=======
+<p>The target outcomes for Experiment 1 were:</p>
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 <blockquote>
-<p>Impurity and moral self-regard. Similar 2 × 2 ANOVAs using impurity and moral self-regard as dependent measures also revealed only a significant main effect of type of behavior. Participants in the inauthentic-behavior condition reported greater feelings of impurity (M = 3.56, SD = 1.86, 95% CI = [3.30, 3.85]) and lower moral self-regard (M = 2.90, SD = 1.50, 95% CI = [2.61, 3.16]) than did participants in the authentic-behavior condition (impurity: M = 1.51, SD = 1.29, 95% CI = [1.25, 1.78]; moral self-regard: M = 4.99, SD = 1.68, 95% CI = [4.72, 5.26]), F(1, 263) = 111.06, p &lt; .001, ηp 2 = .30, and F(1, 263) = 115.25, p &lt; .001, ηp2 = .31, respectively.</p>
+<p>Similar 2 × 2 ANOVAs using impurity and moral self-regard as dependent measures also revealed only a significant main effect of type of behavior. Participants in the inauthentic-behavior condition reported greater feelings of impurity (M = 3.56, SD = 1.86, 95% CI = [3.30, 3.85]) and lower moral self-regard (M = 2.90, SD = 1.50, 95% CI = [2.61, 3.16]) than did participants in the authentic-behavior condition (impurity: M = 1.51, SD = 1.29, 95% CI = [1.25, 1.78]; moral self-regard: M = 4.99, SD = 1.68, 95% CI = [4.72, 5.26]), F(1, 263) = 111.06, p &lt; .001, ηp 2 = .30, and F(1, 263) = 115.25, p &lt; .001, ηp2 = .31, respectively. (from Gino et al. p. 986)</p>
 </blockquote>
 <hr />
 </div>
@@ -256,151 +272,286 @@ library(knitr) # for kable table formating
 library(haven) # import and export 'SPSS', 'Stata' and 'SAS' Files
 library(readxl) # import excel files
 library(CARPSreports) # custom report functions
+<<<<<<< HEAD:CARPS.html
 library(sjstats)</code></pre>
+=======
+library(ez)</code></pre>
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 <pre class="r"><code># Prepare report object. This will be updated automatically by the reproCheck function each time values are compared
 reportObject &lt;- data.frame(dummyRow = TRUE, reportedValue = NA, obtainedValue = NA, valueType = NA, percentageError = NA, comparisonOutcome = NA, eyeballCheck = NA)</code></pre>
 </div>
 <div id="step-2-load-data" class="section level1">
 <h1>Step 2: Load data</h1>
-<pre class="r"><code>data &lt;- read_spss(&quot;data/data_Experiment_1.sav&quot;)</code></pre>
+<pre class="r"><code>dat &lt;- read_spss(&quot;data/data_Experiment_1.sav&quot;)</code></pre>
 </div>
 <div id="step-3-tidy-data" class="section level1">
 <h1>Step 3: Tidy data</h1>
-<pre class="r"><code>data &lt;- data %&gt;%
-  mutate(subid = 1:nrow(data))</code></pre>
+<pre class="r"><code>tdat &lt;- dat %&gt;% 
+  filter(failed_essay==F)
+
+tdat$subject = as.factor(1:nrow(tdat))</code></pre>
 </div>
 <div id="step-4-run-analysis" class="section level1">
 <h1>Step 4: Run analysis</h1>
 <div id="pre-processing" class="section level2">
 <h2>Pre-processing</h2>
+<<<<<<< HEAD:CARPS.html
 <pre class="r"><code>data &lt;- data %&gt;%
   filter(failed_essay == 0) %&gt;%
   select(subid, authenticity, general_type, moral_self_regard, impurity)</code></pre>
+=======
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 </div>
 <div id="descriptive-statistics" class="section level2">
 <h2>Descriptive statistics</h2>
-<pre class="r"><code>desc = data %&gt;%
+<pre class="r"><code>Reported_Alpha = c(.965, .94)
+moral = psych::alpha(tdat[,paste(&quot;moralSR_&quot;,1:10, sep='')])$total 
+impurity = psych::alpha(tdat[,paste(&quot;Impurity_&quot;,1:3, sep='')])$total # .94 vs. reported .94
+Obtained_Alpha = round(c(moral$raw_alpha, impurity$raw_alpha), digits = 3)
+allAlphas &lt;- cbind(Obtained_Alpha, Reported_Alpha)
+knitr::kable(allAlphas, caption = &quot;Alpha&quot;)</code></pre>
+<table>
+<caption>Alpha</caption>
+<thead>
+<tr class="header">
+<th align="right">Obtained_Alpha</th>
+<th align="right">Reported_Alpha</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0.965</td>
+<td align="right">0.965</td>
+</tr>
+<tr class="even">
+<td align="right">0.943</td>
+<td align="right">0.940</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>Reported_moralSR &lt;- data.frame(Reported_Average = c(2.90, 4.99), 
+                               Reported_SD = c(1.50, 1.68),
+                               Reported_CI_lower = c(2.61, 4.72),
+                               Reported_CI_upper = c(3.16, 5.26))
+obtained_moralSR &lt;- tdat %&gt;%
   group_by(authenticity) %&gt;%
-  summarise_at(vars(moral_self_regard, impurity), funs(mean(.), sd(.)))
+  summarise(Obtained_Average = round((mean(moral_self_regard)), digits = 2), 
+            Obtained_SD = round((sd(moral_self_regard)), digits = 2))
 
-quiet &lt;- reproCheck(reportedValue = '3.56', obtainedValue = desc[desc$authenticity == 0,]$impurity_mean, valueType = 'mean')</code></pre>
-<pre><code>## [1] &quot;MATCH for mean. The reported value (3.56) and the obtained value (3.56) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '2.90', obtainedValue = desc[desc$authenticity == 0,]$moral_self_regard_mean, valueType = 'mean')</code></pre>
+
+allMoralSR &lt;- bind_cols(obtained_moralSR, Reported_moralSR)
+knitr::kable(allMoralSR, caption = &quot;Moral Self-Regard by Authenticity&quot;)</code></pre>
+<table>
+<caption>Moral Self-Regard by Authenticity</caption>
+<thead>
+<tr class="header">
+<th align="right">authenticity</th>
+<th align="right">Obtained_Average</th>
+<th align="right">Obtained_SD</th>
+<th align="right">Reported_Average</th>
+<th align="right">Reported_SD</th>
+<th align="right">Reported_CI_lower</th>
+<th align="right">Reported_CI_upper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="right">2.90</td>
+<td align="right">1.50</td>
+<td align="right">2.90</td>
+<td align="right">1.50</td>
+<td align="right">2.61</td>
+<td align="right">3.16</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">4.99</td>
+<td align="right">1.68</td>
+<td align="right">4.99</td>
+<td align="right">1.68</td>
+<td align="right">4.72</td>
+<td align="right">5.26</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>Reported_impurity &lt;- data.frame(Reported_impurity = c(3.56, 1.51), 
+                                Reported_SD=c(1.86, 1.29),
+                                Reported_CI_lower = c(3.30, 1.25),
+                                Reported_CI_upper = c(3.85, 1.78))
+obtained_impurity &lt;- tdat %&gt;%
+  group_by(authenticity) %&gt;%
+  summarise(Obtained_Average = round((mean(impurity)), digits = 2),
+            Obtained_SD = round((sd(impurity)), digits = 2))
+allImpurity &lt;- bind_cols(obtained_impurity, Reported_impurity)
+knitr::kable(allImpurity, caption = &quot;Impurity by Authenticity&quot;)</code></pre>
+<table>
+<caption>Impurity by Authenticity</caption>
+<thead>
+<tr class="header">
+<th align="right">authenticity</th>
+<th align="right">Obtained_Average</th>
+<th align="right">Obtained_SD</th>
+<th align="right">Reported_impurity</th>
+<th align="right">Reported_SD</th>
+<th align="right">Reported_CI_lower</th>
+<th align="right">Reported_CI_upper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="right">3.56</td>
+<td align="right">1.86</td>
+<td align="right">3.56</td>
+<td align="right">1.86</td>
+<td align="right">3.30</td>
+<td align="right">3.85</td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="right">1.51</td>
+<td align="right">1.29</td>
+<td align="right">1.51</td>
+<td align="right">1.29</td>
+<td align="right">1.25</td>
+<td align="right">1.78</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '.965', obtainedValue = moral$raw_alpha, valueType = 'other')</code></pre>
+<pre><code>## [1] &quot;MATCH for other. The reported value (0.965) and the obtained value (0.965) differed by 0%. Note that the obtained value was rounded to 3 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '.94', obtainedValue = impurity$raw_alpha, valueType = 'other')</code></pre>
+<pre><code>## [1] &quot;MATCH for other. The reported value (0.94) and the obtained value (0.94) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '2.90', obtainedValue = allMoralSR[1,]$Obtained_Average, valueType = 'mean')</code></pre>
 <pre><code>## [1] &quot;MATCH for mean. The reported value (2.9) and the obtained value (2.9) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.51', obtainedValue = desc[desc$authenticity == 1,]$impurity_mean, valueType = 'mean')</code></pre>
-<pre><code>## [1] &quot;MATCH for mean. The reported value (1.51) and the obtained value (1.51) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '4.99', obtainedValue = desc[desc$authenticity == 1,]$moral_self_regard_mean, valueType = 'mean')</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '4.99', obtainedValue = allMoralSR[2,]$Obtained_Average, valueType = 'mean')</code></pre>
 <pre><code>## [1] &quot;MATCH for mean. The reported value (4.99) and the obtained value (4.99) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.86', obtainedValue = desc[desc$authenticity == 0,]$impurity_sd, valueType = 'sd')</code></pre>
-<pre><code>## [1] &quot;MATCH for sd. The reported value (1.86) and the obtained value (1.86) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.50', obtainedValue = desc[desc$authenticity == 0,]$moral_self_regard_sd, valueType = 'sd')</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '3.56', obtainedValue = allImpurity[1,]$Obtained_Average, valueType = 'mean')</code></pre>
+<pre><code>## [1] &quot;MATCH for mean. The reported value (3.56) and the obtained value (3.56) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.51', obtainedValue = allImpurity[2,]$Obtained_Average, valueType = 'mean')</code></pre>
+<pre><code>## [1] &quot;MATCH for mean. The reported value (1.51) and the obtained value (1.51) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.50', obtainedValue = allMoralSR[1,]$Obtained_SD, valueType = 'sd')</code></pre>
 <pre><code>## [1] &quot;MATCH for sd. The reported value (1.5) and the obtained value (1.5) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.29', obtainedValue = desc[desc$authenticity == 1,]$impurity_sd, valueType = 'sd')</code></pre>
-<pre><code>## [1] &quot;MATCH for sd. The reported value (1.29) and the obtained value (1.29) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.68', obtainedValue = desc[desc$authenticity == 1,]$moral_self_regard_sd, valueType = 'sd')</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.68', obtainedValue = allMoralSR[2,]$Obtained_SD, valueType = 'sd')</code></pre>
 <pre><code>## [1] &quot;MATCH for sd. The reported value (1.68) and the obtained value (1.68) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.86', obtainedValue = allImpurity[1,]$Obtained_SD, valueType = 'sd')</code></pre>
+<pre><code>## [1] &quot;MATCH for sd. The reported value (1.86) and the obtained value (1.86) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.29', obtainedValue = allImpurity[2,]$Obtained_SD, valueType = 'sd')</code></pre>
+<pre><code>## [1] &quot;MATCH for sd. The reported value (1.29) and the obtained value (1.29) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<p>INSUFFICIENT INFORMATION ERROR</p>
+<p>All of the means and standard deviations match, but after trying to reproduce the reported 95% confidence intervals which were not included in the SPSS syntax, I was unable to get quite the same CIs (though within a few percent; see below).</p>
+<pre class="r"><code>get_95CIs &lt;- function(x) {
+  sem = sd(x) / sqrt(length(x)) 
+  return(c(mean(x)-2*sem, mean(x)+2*sem))
+}
+
+obtained_CIs_impure_auth = get_95CIs( subset(tdat, authenticity==1)$impurity ) 
+obtained_CIs_impure_inauth = get_95CIs( subset(tdat, authenticity==0)$impurity ) 
+
+obtained_CIs_moralSR_auth = get_95CIs( subset(tdat, authenticity==1)$moral_self_regard ) 
+obtained_CIs_moralSR_inauth = get_95CIs( subset(tdat, authenticity==0)$moral_self_regard ) 
+
+# trying 95% CIs another way, get very similar (and different than reported values)
+unlist(t.test(subset(tdat, authenticity==1)$impurity)$conf.int)[1:2] </code></pre>
+<pre><code>## [1] 1.297855 1.731130</code></pre>
+<pre class="r"><code>unlist(t.test(subset(tdat, authenticity==0)$impurity)$conf.int)[1:2] </code></pre>
+<pre><code>## [1] 3.237238 3.884209</code></pre>
+<pre class="r"><code>unlist(t.test(subset(tdat, authenticity==1)$moral_self_regard)$conf.int)[1:2] </code></pre>
+<pre><code>## [1] 4.706671 5.271590</code></pre>
+<pre class="r"><code>unlist(t.test(subset(tdat, authenticity==0)$moral_self_regard)$conf.int)[1:2] </code></pre>
+<pre><code>## [1] 2.633253 3.157445</code></pre>
+<p>Let’s compare and record these values.</p>
+<pre class="r"><code># moral SR
+reportObject &lt;- reproCheck(reportedValue = '4.72', obtainedValue = obtained_CIs_moralSR_auth[1], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (4.72) and the obtained value (4.7) differed by 0.42%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '5.27', obtainedValue = obtained_CIs_moralSR_auth[2], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MATCH for ci. The reported value (5.27) and the obtained value (5.27) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '2.61', obtainedValue = obtained_CIs_moralSR_inauth[1], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (2.61) and the obtained value (2.63) differed by 0.77%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '3.16', obtainedValue = obtained_CIs_moralSR_inauth[2], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MATCH for ci. The reported value (3.16) and the obtained value (3.16) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># impure
+reportObject &lt;- reproCheck(reportedValue = '1.25', obtainedValue = obtained_CIs_impure_auth[1], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (1.25) and the obtained value (1.3) differed by 4%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '1.78', obtainedValue = obtained_CIs_impure_auth[2], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (1.78) and the obtained value (1.73) differed by 2.81%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '3.30', obtainedValue = obtained_CIs_impure_inauth[1], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (3.3) and the obtained value (3.23) differed by 2.12%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code>reportObject &lt;- reproCheck(reportedValue = '3.85', obtainedValue = obtained_CIs_impure_inauth[2], valueType = 'ci')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for ci. The reported value (3.85) and the obtained value (3.89) differed by 1.04%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
 </div>
 <div id="inferential-statistics" class="section level2">
 <h2>Inferential statistics</h2>
-<div id="regressing-impurity" class="section level3">
-<h3>Regressing impurity</h3>
-<pre class="r"><code>fit = aov(impurity ~ authenticity + general_type + authenticity*general_type, data=data) 
-df &lt;- summary(fit)[[1]]
-fstat = df[c(startsWith(row.names(df), &quot;authenticity &quot;)),][[&quot;F value&quot;]]
-pval = df[c(startsWith(row.names(df), &quot;authenticity &quot;)),][[&quot;Pr(&gt;F)&quot;]]
+<pre class="r"><code># impurity ANOVA
+m = ezANOVA(tdat, dv = .(impurity), wid = .(subject), between = .(authenticity, general_type))
 
-quiet &lt;- reproCheck(reportedValue = '111.06', fstat, valueType = 'F')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for F. The reported value (111.06) and the obtained value (110.67) differed by 0.35%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '&lt;.001', obtainedValue = pval, valueType = 'p', eyeballCheck=TRUE)</code></pre>
+# Dfn
+reportObject &lt;- reproCheck(reportedValue = &quot;1&quot;, obtainedValue = m$ANOVA$DFn[1], valueType = 'df')</code></pre>
+<pre><code>## [1] &quot;MATCH for df. The reported value (1) and the obtained value (1) differed by 0%. Note that the obtained value was rounded to 0 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># Dfd
+reportObject &lt;- reproCheck(reportedValue = &quot;263&quot;, obtainedValue = m$ANOVA$DFd[1], valueType = 'df')</code></pre>
+<pre><code>## [1] &quot;MATCH for df. The reported value (263) and the obtained value (263) differed by 0%. Note that the obtained value was rounded to 0 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># F
+reportObject &lt;- reproCheck(reportedValue = &quot;111.06&quot;, obtainedValue = m$ANOVA$F[1], valueType = 'F')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for F. The reported value (111.06) and the obtained value (110.47) differed by 0.53%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># p
+reportObject &lt;- reproCheck(reportedValue = &quot;&lt;.001&quot;, obtainedValue = m$ANOVA$p[1], valueType = 'p', eyeballCheck = T)</code></pre>
 <pre><code>## [1] &quot;MATCH for p. Eyeball comparison only.&quot;</code></pre>
-<pre class="r"><code>df = eta_sq(fit)
-eta = df[df$term == &quot;authenticity&quot;,]$etasq
-quiet &lt;- reproCheck(reportedValue = '.30', obtainedValue = eta, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (0.3) and the obtained value (0.29) differed by 3.33%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<div id="confidence-interval-inauthentic-behavior-to-impurity" class="section level4">
-<h4>Confidence interval: Inauthentic-behavior to impurity</h4>
-<pre class="r"><code>interval = confint(lm(impurity ~ authenticity, data=data))
-int_min = interval[c(startsWith(row.names(interval), &quot;(Intercept)&quot;)),][[&quot;2.5 %&quot;]]
-int_max = interval[c(startsWith(row.names(interval), &quot;(Intercept)&quot;)),][[&quot;97.5 %&quot;]]
-quiet &lt;- reproCheck(reportedValue = '3.30', obtainedValue = int_min, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (3.3) and the obtained value (3.29) differed by 0.3%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '3.85', obtainedValue = int_max, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (3.85) and the obtained value (3.84) differed by 0.26%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-</div>
-<div id="confidence-interval-inauthentic-behavior-to-moral-self-regard" class="section level4">
-<h4>Confidence interval: Inauthentic-behavior to moral self-regard</h4>
-<pre class="r"><code>interval = confint(lm(moral_self_regard ~ authenticity, data=data))
-int_min = interval[c(startsWith(row.names(interval), &quot;(Intercept)&quot;)),][[&quot;2.5 %&quot;]]
-int_max = interval[c(startsWith(row.names(interval), &quot;(Intercept)&quot;)),][[&quot;97.5 %&quot;]]
-quiet &lt;- reproCheck(reportedValue = '2.61', obtainedValue = int_min, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (2.61) and the obtained value (2.62) differed by 0.38%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '3.16', obtainedValue = int_max, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (3.16) and the obtained value (3.17) differed by 0.32%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-</div>
-<div id="confidence-interval-authentic-behavior-to-impurity" class="section level4">
-<h4>Confidence interval: Authentic-behavior to impurity</h4>
-<pre class="r"><code>interval = confint(lm(impurity ~ authenticity, data=data))
-inauthenticity_mean = desc[desc$authenticity == 0,]$impurity_mean
-int_min = inauthenticity_mean + interval[c(startsWith(row.names(interval), &quot;authenticity&quot;)),][[&quot;2.5 %&quot;]]
-int_max = inauthenticity_mean + interval[c(startsWith(row.names(interval), &quot;authenticity&quot;)),][[&quot;97.5 %&quot;]]
-quiet &lt;- reproCheck(reportedValue = '1.25', obtainedValue = int_min, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (1.25) and the obtained value (1.13) differed by 9.6%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '1.78', obtainedValue = int_max, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (1.78) and the obtained value (1.9) differed by 6.74%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-</div>
-<div id="confidence-interval-authentic-behavior-to-moral-self-regard" class="section level4">
-<h4>Confidence interval: Authentic-behavior to moral self-regard</h4>
-<pre class="r"><code>interval = confint(lm(moral_self_regard ~ authenticity, data=data))
-inauthenticity_mean = desc[desc$authenticity == 0,]$moral_self_regard_mean
-int_min = inauthenticity_mean + interval[c(startsWith(row.names(interval), &quot;authenticity&quot;)),][[&quot;2.5 %&quot;]]
-int_max = inauthenticity_mean + interval[c(startsWith(row.names(interval), &quot;authenticity&quot;)),][[&quot;97.5 %&quot;]]
-quiet &lt;- reproCheck(reportedValue = '4.72', obtainedValue = int_min, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (4.72) and the obtained value (4.6) differed by 2.54%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '5.26', obtainedValue = int_max, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (5.26) and the obtained value (5.37) differed by 2.09%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-</div>
-</div>
-<div id="regressing-moral-self-regard" class="section level3">
-<h3>Regressing moral self-regard</h3>
-<pre class="r"><code>fit = aov(moral_self_regard ~ authenticity + general_type + authenticity*general_type, data=data) 
-df &lt;- summary(fit)[[1]]
-fstat = df[c(startsWith(row.names(df), &quot;authenticity &quot;)),][[&quot;F value&quot;]]
-pval = df[c(startsWith(row.names(df), &quot;authenticity &quot;)),][[&quot;Pr(&gt;F)&quot;]]
+<pre class="r"><code># ηp2 ?
+reportObject &lt;- reproCheck(reportedValue = &quot;.30&quot;, obtainedValue = m$ANOVA$ges[1], valueType = 'pes')</code></pre>
+<pre><code>## [1] &quot;MATCH for pes. The reported value (0.3) and the obtained value (0.3) differed by 0%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># moral self-regard ANOVA
+m_imp = ezANOVA(tdat, dv = .(moral_self_regard), wid = .(subject), between = .(authenticity, general_type))
 
-quiet &lt;- reproCheck(reportedValue = '115.25', fstat, valueType = 'F')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for F. The reported value (115.25) and the obtained value (114.4) differed by 0.74%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-<pre class="r"><code>quiet &lt;- reproCheck(reportedValue = '&lt;.001', obtainedValue = pval, valueType = 'p', eyeballCheck=TRUE)</code></pre>
+# Dfn
+reportObject &lt;- reproCheck(reportedValue = &quot;1&quot;, obtainedValue = m_imp$ANOVA$DFn[1], valueType = 'df')</code></pre>
+<pre><code>## [1] &quot;MATCH for df. The reported value (1) and the obtained value (1) differed by 0%. Note that the obtained value was rounded to 0 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># Dfd
+reportObject &lt;- reproCheck(reportedValue = &quot;263&quot;, obtainedValue = m_imp$ANOVA$DFd[1], valueType = 'df')</code></pre>
+<pre><code>## [1] &quot;MATCH for df. The reported value (263) and the obtained value (263) differed by 0%. Note that the obtained value was rounded to 0 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># F
+reportObject &lt;- reproCheck(reportedValue = &quot;115.25&quot;, obtainedValue = m_imp$ANOVA$F[1], valueType = 'F')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for F. The reported value (115.25) and the obtained value (114.86) differed by 0.34%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
+<pre class="r"><code># p
+reportObject &lt;- reproCheck(reportedValue = &quot;&lt;.001&quot;, obtainedValue = m_imp$ANOVA$p[1], valueType = 'p', eyeballCheck = T)</code></pre>
 <pre><code>## [1] &quot;MATCH for p. Eyeball comparison only.&quot;</code></pre>
-<pre class="r"><code>df = eta_sq(fit)
-eta = df[df$term == &quot;authenticity&quot;,]$etasq
-quiet &lt;- reproCheck(reportedValue = '.31', obtainedValue = eta, valueType = 'other')</code></pre>
-<pre><code>## [1] &quot;MINOR_ERROR for other. The reported value (0.31) and the obtained value (0.3) differed by 3.23%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
-</div>
+<pre class="r"><code># ηp2 ?
+reportObject &lt;- reproCheck(reportedValue = &quot;.31&quot;, obtainedValue = m_imp$ANOVA$ges[1], valueType = 'pes')</code></pre>
+<pre><code>## [1] &quot;MINOR_ERROR for pes. The reported value (0.31) and the obtained value (0.3) differed by 3.23%. Note that the obtained value was rounded to 2 decimal places to match the reported value.&quot;</code></pre>
 </div>
 </div>
 <div id="step-5-conclusion" class="section level1">
 <h1>Step 5: Conclusion</h1>
+<<<<<<< HEAD:CARPS.html
 <p>The reproducibility of the above study was successful for all means and standard deviations but failed to reproduce the exact confidence intervals with half of the intervals being constructed with &lt; 1% difference and a maximum difference of 9.6%. The exact inferential statistics also failed to reproduce with the F-stat having a difference of less than 1% and the p-value having a difference of 3.23%.</p>
+=======
+<p>This reproducibility check was largely a success: all of the descriptive and inferential statistics were reproduced with only minor numerical differences. The only trouble was that the authors’ included SPSS analysis did not show how the 95% confidence intervals reported in the paper were calculated, and I could not</p>
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 <pre class="r"><code>Author_Assistance = FALSE # was author assistance provided? (if so, enter TRUE)
 
-Insufficient_Information_Errors &lt;- 0 # how many discrete insufficient information issues did you encounter?
+Insufficient_Information_Errors &lt;- 1 # how many discrete insufficient information issues did you encounter?
 
 # Assess the causal locus (discrete reproducibility issues) of any reproducibility errors. Note that there doesn't necessarily have to be a one-to-one correspondance between discrete reproducibility issues and reproducibility errors. For example, it could be that the original article neglects to mention that a Greenhouse-Geisser correct was applied to ANOVA outcomes. This might result in multiple reproducibility errors, but there is a single causal locus (discrete reproducibility issue).
 
 locus_typo &lt;- 0 # how many discrete issues did you encounter that related to typographical errors?
-locus_specification &lt;- 0 # how many discrete issues did you encounter that related to incomplete, incorrect, or unclear specification of the original analyses?
+locus_specification &lt;- 1 # how many discrete issues did you encounter that related to incomplete, incorrect, or unclear specification of the original analyses?
 locus_analysis &lt;- 0 # how many discrete issues did you encounter that related to errors in the authors' original analyses?
 locus_data &lt;- 0 # how many discrete issues did you encounter that related to errors in the data files shared by the authors?
-locus_unidentified &lt;- 2 # how many discrete issues were there for which you could not identify the cause
+locus_unidentified &lt;- 1 # how many discrete issues were there for which you could not identify the cause
 
 # How many of the above issues were resolved through author assistance?
 locus_typo_resolved &lt;- 0 # how many discrete issues did you encounter that related to typographical errors?
-locus_specification_resolved &lt;- 0 # how many discrete issues did you encounter that related to incomplete, incorrect, or unclear specification of the original analyses?
-locus_analysis_resolved &lt;- 0 # how many discrete issues did you encounter that related to errors in the authors' original analyses?
-locus_data_resolved &lt;- 0 # how many discrete issues did you encounter that related to errors in the data files shared by the authors?
-locus_unidentified_resolved &lt;- 0 # how many discrete issues were there for which you could not identify the cause
+locus_specification_resolved &lt;- 1 # how many discrete issues did you encounter that related to incomplete, incorrect, or unclear specification of the original analyses?
+locus_analysis_resolved &lt;- NA # how many discrete issues did you encounter that related to errors in the authors' original analyses?
+locus_data_resolved &lt;- NA # how many discrete issues did you encounter that related to errors in the data files shared by the authors?
+locus_unidentified_resolved &lt;- NA # how many discrete issues were there for which you could not identify the cause
 
 Affects_Conclusion &lt;- FALSE # Do any reproducibility issues encounter appear to affect the conclusions made in the original article? TRUE, FALSE, or NA. This is a subjective judgement, but you should taking into account multiple factors, such as the presence/absence of decision errors, the number of target outcomes that could not be reproduced, the type of outcomes that could or could not be reproduced, the difference in magnitude of effect sizes, and the predictions of the specific hypothesis under scrutiny.</code></pre>
+<<<<<<< HEAD:CARPS.html
+=======
+<p>[PILOT/COPILOT DO NOT EDIT THE CODE CHUNK BELOW]</p>
+>>>>>>> parent of 9a58b32... Reproducibility report:pilotReport.html
 <pre class="r"><code>reportObject &lt;- reportObject %&gt;%
   filter(dummyRow == FALSE) %&gt;% # remove the dummy row
   select(-dummyRow) %&gt;% # remove dummy row designation
@@ -439,213 +590,199 @@ if(reportType == &quot;final&quot;){
 <pre class="r"><code>devtools::session_info()</code></pre>
 <pre><code>## ─ Session info ──────────────────────────────────────────────────────────
 ##  setting  value                       
-##  version  R version 3.5.1 (2018-07-02)
-##  os       macOS  10.14                
+##  version  R version 3.4.4 (2018-03-15)
+##  os       macOS High Sierra 10.13.6   
 ##  system   x86_64, darwin15.6.0        
 ##  ui       X11                         
 ##  language (EN)                        
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       America/Los_Angeles         
-##  date     2018-11-04                  
+##  date     2018-10-21                  
 ## 
 ## ─ Packages ──────────────────────────────────────────────────────────────
-##  package      * version  date       lib
-##  assertthat     0.2.0    2017-04-11 [1]
-##  backports      1.1.2    2017-12-13 [1]
-##  base64enc      0.1-3    2015-07-28 [1]
-##  bayesplot      1.6.0    2018-08-02 [1]
-##  bindr          0.1.1    2018-03-13 [1]
-##  bindrcpp     * 0.2.2    2018-03-29 [1]
-##  broom          0.5.0    2018-07-17 [1]
-##  callr          3.0.0    2018-08-24 [1]
-##  CARPSreports * 0.1      2018-11-01 [1]
-##  cellranger     1.1.0    2016-07-27 [1]
-##  cli            1.0.1    2018-09-25 [1]
-##  codetools      0.2-15   2016-10-05 [1]
-##  coin           1.2-2    2017-11-28 [1]
-##  colorspace     1.3-2    2016-12-14 [1]
-##  crayon         1.3.4    2017-09-16 [1]
-##  data.table     1.11.8   2018-09-30 [1]
-##  desc           1.2.0    2018-05-01 [1]
-##  devtools       2.0.1    2018-10-26 [1]
-##  digest         0.6.18   2018-10-10 [1]
-##  dplyr        * 0.7.7    2018-10-16 [1]
-##  emmeans        1.3.0    2018-10-26 [1]
-##  estimability   1.3      2018-02-11 [1]
-##  evaluate       0.12     2018-10-09 [1]
-##  forcats      * 0.3.0    2018-02-19 [1]
-##  fs             1.2.6    2018-08-23 [1]
-##  ggplot2      * 3.1.0    2018-10-25 [1]
-##  ggridges       0.5.1    2018-09-27 [1]
-##  glmmTMB        0.2.2.0  2018-07-03 [1]
-##  glue           1.3.0    2018-07-17 [1]
-##  gtable         0.2.0    2016-02-26 [1]
-##  haven        * 1.1.2    2018-06-27 [1]
-##  hms            0.4.2    2018-03-10 [1]
-##  htmltools      0.3.6    2017-04-28 [1]
-##  httr           1.3.1    2017-08-20 [1]
-##  jsonlite       1.5      2017-06-01 [1]
-##  knitr        * 1.20     2018-02-20 [1]
-##  lattice        0.20-35  2017-03-25 [1]
-##  lazyeval       0.2.1    2017-10-29 [1]
-##  lme4           1.1-18-1 2018-08-17 [1]
-##  lubridate      1.7.4    2018-04-11 [1]
-##  magrittr       1.5      2014-11-22 [1]
-##  MASS           7.3-50   2018-04-30 [1]
-##  Matrix         1.2-14   2018-04-13 [1]
-##  memoise        1.1.0    2017-04-21 [1]
-##  minqa          1.2.4    2014-10-09 [1]
-##  modelr         0.1.2    2018-05-11 [1]
-##  modeltools     0.2-22   2018-07-16 [1]
-##  multcomp       1.4-8    2017-11-08 [1]
-##  munsell        0.5.0    2018-06-12 [1]
-##  mvtnorm        1.0-8    2018-05-31 [1]
-##  nlme           3.1-137  2018-04-07 [1]
-##  nloptr         1.2.1    2018-10-03 [1]
-##  pillar         1.3.0    2018-07-14 [1]
-##  pkgbuild       1.0.2    2018-10-16 [1]
-##  pkgconfig      2.0.2    2018-08-16 [1]
-##  pkgload        1.0.2    2018-10-29 [1]
-##  plyr           1.8.4    2016-06-08 [1]
-##  prediction     0.3.6    2018-05-22 [1]
-##  prettyunits    1.0.2    2015-07-13 [1]
-##  processx       3.2.0    2018-08-16 [1]
-##  ps             1.2.0    2018-10-16 [1]
-##  purrr        * 0.2.5    2018-05-29 [1]
-##  pwr            1.2-2    2018-03-03 [1]
-##  R6             2.3.0    2018-10-04 [1]
-##  Rcpp           0.12.19  2018-10-01 [1]
-##  readr        * 1.1.1    2017-05-16 [1]
-##  readxl       * 1.1.0    2018-04-20 [1]
-##  remotes        2.0.2    2018-10-30 [1]
-##  rlang          0.3.0.1  2018-10-25 [1]
-##  rmarkdown      1.10     2018-06-11 [1]
-##  rprojroot      1.3-2    2018-01-03 [1]
-##  rstudioapi     0.8      2018-10-02 [1]
-##  rvest          0.3.2    2016-06-17 [1]
-##  sandwich       2.5-0    2018-08-17 [1]
-##  scales         1.0.0    2018-08-09 [1]
-##  sessioninfo    1.1.0    2018-09-25 [1]
-##  sjlabelled     1.0.14   2018-09-12 [1]
-##  sjmisc         2.7.5    2018-09-13 [1]
-##  sjstats      * 0.17.1   2018-10-02 [1]
-##  snakecase      0.9.2    2018-08-14 [1]
-##  stringdist     0.9.5.1  2018-06-08 [1]
-##  stringi        1.2.4    2018-07-20 [1]
-##  stringr      * 1.3.1    2018-05-10 [1]
-##  survival       2.42-3   2018-04-16 [1]
-##  TH.data        1.0-9    2018-07-10 [1]
-##  tibble       * 1.4.2    2018-01-22 [1]
-##  tidyr        * 0.8.2    2018-10-28 [1]
-##  tidyselect     0.2.5    2018-10-11 [1]
-##  tidyverse    * 1.2.1    2017-11-14 [1]
-##  TMB            1.7.14   2018-06-23 [1]
-##  usethis        1.4.0    2018-08-14 [1]
-##  withr          2.1.2    2018-03-15 [1]
-##  xml2           1.2.0    2018-01-24 [1]
-##  xtable         1.8-3    2018-08-29 [1]
-##  yaml           2.2.0    2018-07-25 [1]
-##  zoo            1.8-4    2018-09-19 [1]
+##  package      * version   date       lib
+##  abind          1.4-5     2016-07-21 [1]
+##  assertthat     0.2.0     2017-04-11 [1]
+##  backports      1.1.2     2017-12-13 [1]
+##  base64enc      0.1-3     2015-07-28 [1]
+##  bindr          0.1.1     2018-03-13 [1]
+##  bindrcpp     * 0.2.2     2018-03-29 [1]
+##  broom          0.5.0     2018-07-17 [1]
+##  callr          3.0.0     2018-08-24 [1]
+##  car            3.0-0     2018-04-02 [1]
+##  carData        3.0-1     2018-03-28 [1]
+##  CARPSreports * 0.1       2018-10-19 [1]
+##  cellranger     1.1.0     2016-07-27 [1]
+##  cli            1.0.1     2018-09-25 [1]
+##  colorspace     1.3-2     2016-12-14 [1]
+##  crayon         1.3.4     2017-09-16 [1]
+##  curl           3.2       2018-03-28 [1]
+##  data.table     1.11.4    2018-05-27 [1]
+##  debugme        1.1.0     2017-10-22 [1]
+##  desc           1.2.0     2018-05-01 [1]
+##  devtools       2.0.0     2018-10-19 [1]
+##  digest         0.6.18    2018-10-10 [1]
+##  dplyr        * 0.7.7     2018-10-16 [1]
+##  evaluate       0.12      2018-10-09 [1]
+##  ez           * 4.4-0     2016-11-02 [1]
+##  forcats      * 0.3.0     2018-02-19 [1]
+##  foreign        0.8-69    2017-06-22 [1]
+##  fs             1.2.6     2018-08-23 [1]
+##  ggplot2      * 3.0.0     2018-07-03 [1]
+##  glue           1.3.0     2018-07-17 [1]
+##  gtable         0.2.0     2016-02-26 [1]
+##  haven        * 1.1.2     2018-06-27 [1]
+##  highr          0.7       2018-06-09 [1]
+##  hms            0.4.2     2018-03-10 [1]
+##  htmltools      0.3.6     2017-04-28 [1]
+##  httr           1.3.1     2017-08-20 [1]
+##  jsonlite       1.5       2017-06-01 [1]
+##  knitr        * 1.20      2018-02-20 [1]
+##  lattice        0.20-35   2017-03-25 [1]
+##  lazyeval       0.2.1     2017-10-29 [1]
+##  lme4           1.1-17    2018-04-03 [1]
+##  lubridate      1.7.4     2018-04-11 [1]
+##  magrittr       1.5       2014-11-22 [1]
+##  MASS           7.3-49    2018-02-23 [1]
+##  Matrix         1.2-12    2017-11-30 [1]
+##  memoise        1.1.0     2017-04-21 [1]
+##  mgcv           1.8-23    2018-01-21 [1]
+##  minqa          1.2.4     2014-10-09 [1]
+##  mnormt         1.5-5     2016-10-15 [1]
+##  modelr         0.1.2     2018-05-11 [1]
+##  munsell        0.5.0     2018-06-12 [1]
+##  nlme           3.1-131.1 2018-02-16 [1]
+##  nloptr         1.0.4     2014-08-04 [1]
+##  openxlsx       4.1.0     2018-05-26 [1]
+##  pillar         1.3.0     2018-07-14 [1]
+##  pkgbuild       1.0.2     2018-10-16 [1]
+##  pkgconfig      2.0.2     2018-08-16 [1]
+##  pkgload        1.0.1     2018-10-11 [1]
+##  plyr           1.8.4     2016-06-08 [1]
+##  prettyunits    1.0.2     2015-07-13 [1]
+##  processx       3.2.0     2018-08-16 [1]
+##  ps             1.2.0     2018-10-16 [1]
+##  psych          1.8.4     2018-05-06 [1]
+##  purrr        * 0.2.5     2018-05-29 [1]
+##  R6             2.3.0     2018-10-04 [1]
+##  Rcpp           0.12.19   2018-10-01 [1]
+##  readr        * 1.1.1     2017-05-16 [1]
+##  readxl       * 1.1.0     2018-04-20 [1]
+##  remotes        2.0.0     2018-10-11 [1]
+##  reshape2       1.4.3     2017-12-11 [1]
+##  rio            0.5.10    2018-03-29 [1]
+##  rlang          0.2.2     2018-08-16 [1]
+##  rmarkdown      1.10      2018-06-11 [1]
+##  rprojroot      1.3-2     2018-01-03 [1]
+##  rstudioapi     0.8       2018-10-02 [1]
+##  rvest          0.3.2     2016-06-17 [1]
+##  scales         1.0.0     2018-08-09 [1]
+##  sessioninfo    1.1.0     2018-09-25 [1]
+##  stringi        1.2.4     2018-07-20 [1]
+##  stringr      * 1.3.1     2018-05-10 [1]
+##  testthat       2.0.0     2017-12-13 [1]
+##  tibble       * 1.4.2     2018-01-22 [1]
+##  tidyr        * 0.8.1     2018-05-18 [1]
+##  tidyselect     0.2.5     2018-10-11 [1]
+##  tidyverse    * 1.2.1     2017-11-14 [1]
+##  usethis        1.4.0     2018-08-14 [1]
+##  withr          2.1.2     2018-03-15 [1]
+##  xml2           1.2.0     2018-01-24 [1]
+##  yaml           2.2.0     2018-07-25 [1]
+##  zip            1.0.0     2017-04-25 [1]
 ##  source                                     
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
 ##  Github (METRICS-CARPS/CARPSreports@89db4a9)
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.1)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
-##  CRAN (R 3.5.0)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.1)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.2)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.1)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.2)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.2)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.3)                             
+##  CRAN (R 3.4.4)                             
+##  CRAN (R 3.4.0)                             
 ## 
-## [1] /Library/Frameworks/R.framework/Versions/3.5/Resources/library</code></pre>
+## [1] /Library/Frameworks/R.framework/Versions/3.4/Resources/library</code></pre>
 </div>
 
 

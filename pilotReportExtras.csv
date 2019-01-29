@@ -1,2 +1,2 @@
 articleID,pilotNames,copilotNames,pilotTTC,copilotTTC,pilotStartDate,copilotStartDate,completionDate,Author_Assistance,finalOutcome,Insufficient_Information_Errors,locus_typo,locus_specification,locus_analysis,locus_data,locus_unidentified,locus_typo_resolved,locus_specification_resolved,locus_analysis_resolved,locus_data_resolved,locus_unidentified_resolved
-EXT_11-5-2015,George Kachergis,NA,NA,NA,2018-10-19,NA,NA,FALSE,Failure without author assistance,1,0,1,0,0,1,0,1,NA,NA,NA
+EXT_5-11-2015,Andrew Nam,Lauren Borchers,240,240,11/01/18,11/02/18,11/04/19,FALSE,Success without author assistance,0,0,0,0,0,2,0,0,0,0,0
